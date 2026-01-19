@@ -2,13 +2,15 @@
 
 pkgs.mkShell {
   nativeBuildInputs = with pkgs; [
-    python314
-    python314Packages.pip
+    python312
+    python312Packages.pip
+    ffmpeg_7
   ];
 
   buildInputs = with pkgs; [
     openssl
     zlib
+    libopus
   ];
 
   shellHook = ''
